@@ -24,8 +24,8 @@ The goal of this internship is to:
 
 | Day | Summary                                                                 |
 |-----|-------------------------------------------------------------------------|
-| 1   |  Brief description of what you learned/worked on]                       |
-| 2   | B rief description of what you learned/worked on]                       |
+| 1   |  Introduction to VLSI Design FLow And Registration Process              |
+| 2   |  Implemented Logic Gates and MUX in Vivado and simulated                |
 | 3   | [Brief description of what you learned/worked on]                       |
 | 4   | [Brief description of what you learned/worked on]                       |
 | 5   |  Brief description of what you learned/worked on]                       |
@@ -38,19 +38,9 @@ The goal of this internship is to:
 ---
 
 ## 🛠️ Tools & Technologies Used
-- [Tool/Technology 1]
-- [Tool/Technology 2]
-- [Programming Language / Platform]
-- [Any other tools, platforms, or libraries used]
+- Verilog
+- Vivado
+- GTK Wave
+- ModelSim
 
 ---
-
-## 📌 Key Learnings & Takeaways
-At the end of this internship, I aim to have:
-- [Learning Outcome 1]
-- [Learning Outcome 2]
-- [Learning Outcome 3]
-
----
-
-## 📂 Repository Structure
