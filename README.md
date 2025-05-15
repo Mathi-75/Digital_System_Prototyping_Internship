@@ -44,3 +44,5 @@ The goal of this internship is to:
 - ModelSim
 
 ---
+## To run any of the code in Vivado 
+- Copy the code and store in the design sources in the Vivado
