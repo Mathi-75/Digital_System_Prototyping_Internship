@@ -26,7 +26,7 @@ The goal of this internship is to:
 |-----|-------------------------------------------------------------------------|
 | 1   |  Introduction to VLSI Design FLow And Registration Process              |
 | 2   |  Implemented Logic Gates and MUX in Vivado and simulated                |
-| 3   | [Brief description of what you learned/worked on]                       |
+| 3   |  Implemented Combinational circuit and simulation using Testbench       |
 | 4   | [Brief description of what you learned/worked on]                       |
 | 5   |  Brief description of what you learned/worked on]                       |
 | 6   | [Brief description of what you learned/worked on]                       |

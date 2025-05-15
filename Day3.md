@@ -107,7 +107,72 @@ a= 4'd0;b=4'd0;cin=0;
 end
 endmodule
 ```
+![image](images/Day3/Screenshot%202025-05-14%20145350.png)
+___
+
+## HALF SUBTRACTOR
+`Code`
+```verilog
+module Half_Subtracter(
+input a,b,
+output diff,bor);
+assign diff = a^b;
+assign bor = (~a)&b;
+endmodule
+```
+`TestBench`
+```verilog
+module Half_Subtracter_TB();
+reg a,b;
+wire diff,bor;
+Half_Subtracter uut(a,b,diff,bor);
+initial 
+begin
+a=0;b=0;
+#10 a=0;b=1;
+#10 a=1;b=0;
+#10 a=1;b=1;
+end
+endmodule
+```
+
+![image](images/Day3/Screenshot%202025-05-14%20150311.png)
 
 ___
 
+## FULL SUBTRACTOR
+`Code`
+```verilog
+module Full_Subtractor(
+input a,b,bin,
+output diff,bor);
 
+wire diff1,b1,b2;
+Half_Subtracter ha1(a,b,diff1,b1);
+Half_Subtracter ha2(diff1,bin,diff,bor);
+endmodule
+```
+`TestBench`
+```verilog
+module Full_Subtractor_TB();
+reg a,b,c;
+wire diff,bor;
+
+Full_Subtractor uut(a,b,c,diff,bor);
+initial
+begin
+a=0;b=0;c=0;
+#100 a=0;b=0;c=1;
+#100 a=0;b=1;c=0;
+#100 a=0;b=1;c=1;
+#100 a=1;b=0;c=0;
+#100 a=1;b=0;c=1;
+#100 a=1;b=1;c=0;
+#100 a=1;b=1;c=1;
+#100 $finish;
+end
+endmodule
+```
+![image](images/Day3/Screenshot%202025-05-14%20151454.png)
+
+___
