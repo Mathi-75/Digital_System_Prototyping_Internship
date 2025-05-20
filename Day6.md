@@ -1,4 +1,8 @@
 # How to Dump the verilog code to a FPGA
+
+📅 MAY 12, 2025  
+📌 NIELIT,Calicut
+
 - Used board  : Digilent Arty 7 35T
 - Part number : xc7a35tcsg324-1
 - Software    : Xilinx Vivado 2024.2

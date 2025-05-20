@@ -1,5 +1,8 @@
 # Implementation of Parity Generator, Checker and Sequential Circuits
 
+📅 MAY 12, 2025  
+📌 NIELIT,Calicut
+
 ## Even Parity Generator
 `Code`
 ```verilog

@@ -1,4 +1,8 @@
 # DAY 2: Implementation of Logic Gates and MUX in Vivado 
+
+📅 MAY 12, 2025  
+📌 NIELIT,Calicut
+
 ## AND GATE
 ```verilog
 module OR_Gate(

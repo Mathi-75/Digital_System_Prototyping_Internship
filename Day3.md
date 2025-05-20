@@ -1,5 +1,8 @@
 # Implementation of Combinational Circuits in Vivado and Simulating using TestBench
 
+📅 MAY 12, 2025  
+📌 NIELIT,Calicut
+
 ## HALF ADDER
 `Code`
 ```verilog
