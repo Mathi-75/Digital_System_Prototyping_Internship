@@ -1,6 +1,6 @@
 # Implementation of Combinational Circuits and Mini Project
 
-📅 MAY 12, 2025  
+📅 MAY 15, 2025  
 📌 NIELIT,Calicut
 
 ## 8x3 Encoder

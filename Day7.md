@@ -1,6 +1,6 @@
 # Designing of Counters
 
-📅 MAY 12, 2025  
+📅 MAY 20, 2025  
 📌 NIELIT,Calicut
 
 ## Upcounter 

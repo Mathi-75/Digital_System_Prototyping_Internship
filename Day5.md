@@ -1,6 +1,6 @@
 # Implementation of Parity Generator, Checker and Sequential Circuits
 
-📅 MAY 12, 2025  
+📅 MAY 16, 2025  
 📌 NIELIT,Calicut
 
 ## Even Parity Generator

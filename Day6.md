@@ -1,6 +1,6 @@
 # Intro to Parameterized Design, How to Dump the verilog code to a FPGA
 
-📅 MAY 12, 2025  
+📅 MAY 19, 2025  
 📌 NIELIT,Calicut
 
 ## Parameterized register

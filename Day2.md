@@ -1,6 +1,6 @@
 # DAY 2: Implementation of Logic Gates and MUX in Vivado 
 
-📅 MAY 12, 2025  
+📅 MAY 13, 2025  
 📌 NIELIT,Calicut
 
 ## AND GATE
