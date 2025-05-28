@@ -27,13 +27,13 @@ The goal of this internship is to:
 | 1   |  Introduction to VLSI Design FLow And Registration Process              |
 | 2   |  Implemented Logic Gates and MUX in Vivado and simulated                |
 | 3   |  Implemented Combinational circuit and simulation using Testbench       |
-| 4   | [Brief description of what you learned/worked on]                       |
-| 5   |  Brief description of what you learned/worked on]                       |
-| 6   | [Brief description of what you learned/worked on]                       |
-| 7   | [Brief description of what you learned/worked on]                       |
-| 8   | [Brief description of what you learned/worked on]                       |
-| 9   | [Brief description of what you learned/worked on]                       |
-| 10  | [Brief description of what you learned/worked on / final wrap-up]       |
+| 4   |  Combinational Circuits cntd.                                           |
+| 5   |  Parity Generator and Checker                                           |
+| 6   |  Parameterized Design and FPGA dumping                                  |
+| 7   |  Designing Counters                                                     |
+| 8   |  Sub-Program in Verilog                                                 |
+| 9   |  Mini Projects                                                          |
+| 10  |  IP blocks and Some industrially use IP blocks                          |
 
 ---
 
