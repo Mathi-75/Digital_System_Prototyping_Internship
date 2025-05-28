@@ -76,3 +76,56 @@ endmodule
 
 ___
 
+## Traffic Light Controller
+
+`Code`
+```verilog
+`timescale 1ns / 1ps
+
+module traffic(
+    input clk,         
+    input reset,       
+    output reg Red,
+    output reg Green,
+    output reg Blue
+);
+
+    reg [25:0] clk_div = 0;
+    reg slow_clk = 0;
+
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            clk_div <= 0;
+            slow_clk <= 0;
+        end else begin
+            clk_div <= clk_div + 1;
+            slow_clk <= clk_div[25];
+        end
+    end
+
+    reg [3:0] counter = 0;
+
+    always @(posedge slow_clk or posedge reset) begin
+        if (reset) begin
+            counter <= 0;
+            Red <= 1; Green <= 0; Blue <= 0;
+        end else begin
+            counter <= counter + 1;
+
+            case (counter)
+                4: begin
+                    Red <= 1; Green <= 0; Blue <= 0;
+                end
+                8: begin
+                    Red <= 0; Green <= 1; Blue <= 0;
+                end
+                15: begin
+                    Red <= 0; Green <= 0; Blue <= 1;
+                end
+                default: ;
+            endcase
+        end
+    end
+
+endmodule
+```
