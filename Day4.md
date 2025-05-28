@@ -1,4 +1,4 @@
-# Implementation of Combinational Circuits and Mini Project
+# Implementation of Combinational Circuits
 
 📅 MAY 15, 2025  
 📌 NIELIT,Calicut
@@ -203,42 +203,6 @@ end
 endmodule
 ```
 ![image](images/Day4/Screenshot%202025-05-15%20145020.png)
-
-___
-
-## Digital Safe System
-`Code`
-```verilog
-`timescale 1ns / 1ps
-module Digital_Safe_System(
-input [0:3]p,
-output I);
-wire [0:3]s;
-assign s= 4'b1011;      //predefined password
-xnor G1(w1,s[0],p[0]);
-xnor G2(w2,s[1],p[1]);
-xnor G3(w3,s[2],p[2]);
-xnor G4(w4,s[3],p[3]);
-and G5(I,w1,w2,w3,w4);
-endmodule
-```
-`Testbench`
-```verilog
-`timescale 1ns / 1ps
-module Digital_Safe_System_TB();
-reg [0:3]p;
-wire I;
-Digital_Safe_System uut(p,I);
-initial
-begin
-p=4'b1011;
-#10 p=4'b0000;
-#10 p=4'b1111;
-#10 $finish;
-end
-endmodule
-```
-![image](images/Day4/Screenshot%202025-05-15%20151856.png)
 
 ___
 

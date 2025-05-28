@@ -121,46 +121,6 @@ endmodule
 
 ___
 
-## Mini-Project: Car Parking Occupied Slot Counting system
-Our last real-life problem is as follows. There is a car park with three slots and we would like to know how many of its slots are occupied at a given time. Within the design, occupied slot locations are not important. We can design a combinational circuit for this purpose. Assume that we placed a sensor over each slot which gives output logic level 1 when the slot is occupied. If the slot is empty, sensor gives output logic level 0. Let’s label output of sensors as binary variables s0, s1, and s2. The designed combinational circuit will provide the output as a two-bit binary number c1 (MSB) and c0 (LSB). Therefore, we should cover all input combinations in terms of a truth table.
-![alt text](image.png)
-
-`Code`
-```verilog
-`timescale 1ns / 1ps
-module car_park(
-    input [2:0] s,
-    output [1:0] c
-    );
-    assign c[1]=(s[0]&s[1])||(s[0]&s[2])||(s[1]&s[2]);
-    assign c[0]=s[0]^s[1]^s[2];
-endmodule
-```
-`TestBench`
-```verilog
-`timescale 1ns / 1ps
-module car_park_tb();
-reg [2:0]s;
-wire [1:0]c;
-car_park uut(s,c);
-initial
-begin
-s=3'd0;
-#10 s=3'd1;
-#10 s=3'd2;
-#10 s=3'd3;
-#10 s=3'd4;
-#10 s=3'd5;
-#10 s=3'd6;
-#10 s=3'd7;
-#10 $finish;
-end
-endmodule
-```
-![image](images/Day5/Screenshot%202025-05-16%20114516.png)
-
-___
-
 ## D LATCH
 `code`
 ```verilog
