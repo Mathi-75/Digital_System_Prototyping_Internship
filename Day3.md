@@ -152,7 +152,8 @@ output diff,bor);
 
 wire diff1,b1,b2;
 Half_Subtracter ha1(a,b,diff1,b1);
-Half_Subtracter ha2(diff1,bin,diff,bor);
+Half_Subtracter ha2(diff1,bin,diff,b2);
+assign borr = b1 | b2 ;
 endmodule
 ```
 `TestBench`
