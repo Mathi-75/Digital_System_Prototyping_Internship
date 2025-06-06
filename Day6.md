@@ -23,7 +23,7 @@ always @(posedge clk or posedge rst)
 begin
     if(rst) begin
         for (i=0;i<DEPTH;i=i+1) begin
-            shift_arr[0]<=D;
+            shift_arr[i]<=D;
         end
     end 
     if(wen) begin
